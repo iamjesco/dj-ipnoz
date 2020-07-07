@@ -8,11 +8,15 @@ nav
 	display: flex
 	justify-content: space-between
 	align-items: center
-	background-color: rgba(0, 0, 0, .7)
+	background-color: rgba(0, 0, 0, 0)
+	transition: .5s ease-in-out
+	transform: translateY(20px)
 	.logo
-		font: normal 1.5rem 'Helvetica'
-		margin: 20px 0 20px 200px
-		color: #ffffff
+		font: normal 2rem 'Helvetica'
+		margin: 10px 0 10px 200px
+		img
+			height: 80px
+			transition: .5s ease-in-out
 	ul
 		display: flex
 		margin-right: 200px
@@ -22,3 +26,11 @@ nav
 			display: block
 			color: #ffffff
 			font: normal 1.3rem Helvetica
+
+
+.fade-in
+	background-color: rgba(0, 0, 0, 0.8)
+	transform: translateY(0)
+	.logo
+		img
+			height: 40px
