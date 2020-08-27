@@ -4,38 +4,105 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/main.css">
 	<title>Document</title>
 </head>
 <body>
 	
-
-	<nav id="nav">
+<header>
+	<nav class="nav">
 		<a href="#" class="logo">
 			<img src="images/logo.png" alt="">
 		</a>
-
 		<ul>
-			<li><a href="#">Bio</a></li>
-			<li><a href="#">Shows</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="#hero">Home</a></li>
+			<li><a href="#bio">Bio</a></li>
+			<li><a href="#music">Music</a></li>
+			<li><a href="#events">Events</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</nav>
+</header>
 
-	<section class="hero">
+<section id="hero" class="hero">
 
-		<div class="hero-overlay">
-			<h1>Donchain</h1>
-		</div>
+	<div class="overlay"></div>
 
-		<iframe class="mixcloud" width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FDjIpnoZ%2Fdj-ipnoz-eclectic-vibes-radioshow-17%2F" frameborder="0" ></iframe>
+	<iframe class="mixcloud" width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FDjIpnoZ%2Fdj-ipnoz-eclectic-vibes-radioshow-17%2F" frameborder="0" ></iframe>
 
-	</section>
+</section>
 
-	<section class="about">
+<section id="bio" class="bio">
+
+	<div class="bio-image"></div>
+	<div class="bio-profile"></div>
+
+</section>
+
+<section id="music" class="music">
+	<div class="overlay"></div>
+	<h1>Latest Music</h1>
+	<ul>
+		<li>
+			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/754624726&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+			<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+				<a href="https://soundcloud.com/krisfader2000" title="Dj Krisfader" target="_blank" style="color: #cccccc; text-decoration: none;">Dj Krisfader
+				</a> · 
+				<a href="https://soundcloud.com/krisfader2000/dj-krisfader-just-in-time-live-022020" title="DJ KRISFADER-JUST IN TIME (LIVE 02/2020)" target="_blank" style="color: #cccccc; text-decoration: none;">DJ KRISFADER-JUST IN TIME (LIVE 02/2020)
+				</a>
+			</div>
+		</li>
+		<li>
+			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/636623181&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+			<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">	
+				<a href="https://soundcloud.com/djgetdown" title="DJ GETDOWN" target="_blank" style="color: #cccccc; text-decoration: none;">DJ GETDOWN
+				</a> · 
+				<a href="https://soundcloud.com/djgetdown/dj-snake-ft-j-balvin-tyga-loco-contigo-dj-getdown-remix" title="Dj Snake Ft. J Balvin &amp; Tyga - Loco Contigo (DJ Getdown Remix) FREE DOWNLOAD" target="_blank" style="color: #cccccc; text-decoration: none;">Dj Snake Ft. J Balvin &amp; Tyga - Loco Contigo (DJ Getdown Remix) FREE DOWNLOAD</a>
+				</div>
+		</li>
+		<li>
+			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/648543950&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+			<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">	
+			<a href="https://soundcloud.com/djfreddymoreira" title="FREDDY MOREIRA [OFFICIAL]" target="_blank" style="color: #cccccc; text-decoration: none;">FREDDY MOREIRA [OFFICIAL]
+				</a> · 
+				<a href="https://soundcloud.com/djfreddymoreira/freddy-moreira-mixtape-9-flight-to-the-beach" title="FREDDY MOREIRA - MIXTAPE 9 (Flight To The Beach)" target="_blank" style="color: #cccccc; text-decoration: none;">FREDDY MOREIRA - MIXTAPE 9 (Flight To The Beach)
+				</a>
+			</div>
+		</li>
+	</ul>
+	
+</section>
+
+<!-- <section id="events" class="events">
 
 
-	</section>
+</section> -->
+
+<section id="contact" class="contact">
+
+	<footer>
+		<ul class="social">
+			<li class="social-cta">
+				FOLLOW ME
+			</li>
+			<li>
+				<a href="https://www.facebook.com/DeejayIpnoz" class="fab fa-facebook-f" title="Facebook" target="_blank"></a>
+			</li>
+			<li><a href="https://www.mixcloud.com/DjIpnoZ/"	class="fab fa-mixcloud" title="Mixcloud" target="_blank"></a>
+			</li>
+			<li>
+				<a href="https://www.snapchat.com/add/deejayipnoz" class="fab fa-snapchat-ghost" title="Snapchat" target="_blank"></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/ipnoz_dyat/" class="fab fa-instagram" title="Instagram" target="_blank"></a>
+			</li>
+			<li>
+				<a href="https://m.soundcloud.com/deejayipnoz" class="fab fa-soundcloud" title="Soundcloud" target="_blank"></a>
+			</li>
+		</ul>
+	</footer>
+</section>
 
 
 	<script src="scripts/main.js"></script>

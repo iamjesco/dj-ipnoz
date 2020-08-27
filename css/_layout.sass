@@ -1,16 +1,43 @@
 
-
 .hero
-	background: url('../images/hero-img.jpg') center/cover no-repeat fixed
+	background: url('../images/headphones.jpg') top/cover no-repeat fixed
+	height: 100vh
+	width: 100%
+	position: relative
+	
+
+.bio
+	background-color: #cccccc
+	height: 100vh
+	display: grid
+	grid-template-columns: repeat(2, 1fr)
+	&-image
+		background-color: #300 
+	&-profile
+		background-color: #666
+
+.music
+	background: url('../images/music.jpg') center/cover fixed no-repeat
+	position: relative
+	padding: 100px 200px
+	h1 
+		position: relative
+		font: normal 2rem Helvetica
+		text-align: center
+		color: #ffffff
+	ul 
+		position: relative
+		display: grid
+		grid-template-columns: repeat(3, 1fr)
+		grid-column-gap: 30px
+		margin: 50px auto
+
+.events
+	background-color: #003355
+	height: 100vh
+
+.contact
+	background-color: #553300
 	height: 100vh
 	position: relative
-	&-overlay
-		position: absolute
-		width: 100%
-		height: 100%
-		background-color: rgba(0, 0, 0, .7)
-		z-index: 1
-
-.about
-	background-color: #333333
-	height: 50vh
+		
