@@ -1,55 +1,56 @@
 
 
 .logo
-	font: normal 2rem 'Helvetica'
-	text-align: center
+	margin: 15px 0 
 	img
 		height: 60px
+		transition: .5s ease-in-out
 
-
-.nav
-	background-color: rgba(0, 0, 0, .8)
-	border-bottom: 1px solid #CA1B01
+header
 	position: fixed
-	top: 0
 	width: 100%
-	display: flex
-	padding: 20px 0 5px 0
-	flex-direction: column
-	align-items: center
-	justify-content: center
-	z-index: 9
-	ul
+	top: 0
+	display: grid 
+	grid-template-columns: repeat(12, 1fr)
+	z-index: 10
+	nav
+		background-color: rgba(0, 0, 0, 0)
+		// border-bottom: 1px solid #CA1B01
+		grid-column: 3 / 11
 		display: flex
-		margin-top: 10px
-		li
-			flex-grow: 1
-			text-align: center
-			padding: 0 20px
-		a			
-			display: block
-			color: #cccccc
-			font: normal 1.3rem Helvetica
-			padding: 20px 0
-			transition: .3s ease-in-out
-			position: relative
-			&::after
-				content: ''
-				height: 5px
-				width: 100%
-				transform: scaleX(0)
-				transform-origin: left
-				background-color: #CA1B01
-				position: absolute
-				left: 0
-				bottom: 0
-				z-index: 0
+		align-items: center
+		justify-content: space-between
+		
+		ul
+			display: flex
+			li
+				flex-grow: 1
+				text-align: center
+				margin-left: 40px
+			a			
+				display: block
+				color: #cccccc
+				font: normal 1.3rem Helvetica
+				padding: 20px 0
 				transition: .3s ease-in-out
-			&:hover
-				color: #ffffff
+				position: relative
 				&::after
-					transform: scaleX(1)
-					tramsform-origin: left right
+					content: ''
+					height: 5px
+					width: 100%
+					transform: scaleX(0)
+					transform-origin: left
+					background-color: #CA1B01
+					position: absolute
+					left: 0
+					bottom: 0
+					z-index: 0
+					transition: .3s ease-in-out
+				&:hover
+					color: #ffffff
+					&::after
+						transform: scaleX(1)
+						tramsform-origin: left right
 
 
 .fade-in

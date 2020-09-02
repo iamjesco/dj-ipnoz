@@ -5,45 +5,70 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-	<link rel="stylesheet" href="static/styles/main.css" />
+	<link rel="stylesheet" href="static/css/styles.css" />
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<title>Document</title>
 </head>
 <body>
 	
-<header>
-	<nav class="nav">
-		<a href="#" class="logo">
-			<img src="static/images/logo.png" alt="">
-		</a>
-		<ul>
-			<li><a href="#hero">Home</a></li>
-			<li><a href="#bio">Bio</a></li>
-			<li><a href="#music">Music</a></li>
-			<li><a href="#events">Events</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
-	</nav>
+
+<header id="header">
+<nav id="nav">
+	<a href="#" class="logo">
+		<img src="static/images/logo.png" alt="">
+	</a>
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#bio">Bio</a></li>
+		<li><a href="#music">Music</a></li>
+		<!-- <li><a href="#events">Events</a></li> -->
+		<li><a href="#contact">Contact</a></li>
+	</ul>
+</nav>
 </header>
+<!-- -------------------------------------- -->
 
 <section id="home" class="home">
 			
 	<div class="overlay"></div>
 
+	<!-- <p>Put your New Era hat on. Turn the volume up. Get your drink poured. The future of music is bright with Ipnoz on the scene. 
+				DJ IpnoZ creates a hybrid sound that combines hip-hop, pop, house, dancehall and dance. </p> -->
+
 </section>
 
-
+<!-- -------------------------------------- -->
 
 <section id="bio" class="bio">
-
-	<div class="bio-image"></div>
-	<div class="bio-profile"></div>
+	<div class="bio-bg">
+	</div>
+	<div class="bio-container">
+		<h1 class="section-title" data-aos="fade-down-right">About</h1>
+		<main>
+			<div class="bio-profile" data-aos="fade-right">
+				
+				<p>With a dynamic energy to his work, his sound is responsible for creating musical journies at events, in theatres, and in clubs.
+				With his father's love for the rhythm, Ipnoz grew up a keen DJ, playing to the sounds of the city; winning over every party he plays.</p><p> He works internationally, bringing the sound of his city to lives across the world. For him, it's about creating a sound that can become style it's own.</p>
+				<p> Doing this, he has influenced many clubs in France, many African Countries, The US, The Caribbean and has had a pivotal role in bringing Afrobeats to life in Curacao.</p>
+				<p>His artistical influence draws from artists like Snoop Dogg, Method Man & Redman, Bone Thugs' n' Harmony, Flo Rida, Miguel, Maitre Gims and Trackdilla and DJs' collaborations from Krisfader, Young Son, MystykalKut, Ewone, Alex Gewoon, Noise and more. 
+				<p>It's music that pairs perfectly to products from Belvedere, Luc Belaire and New Era to Coca Cola. </p>
+				Immersed on the scene, Ipnoz has truly encaptured the sound of the island, keeping his ear to the ground as a curator of eclectic events. 
+				<p>With a clear vision for his future on the underground music scene, the city will never sound the same with Ipnoz around.
+				</p>	
+			</div>
+			<div class="bio-image" data-aos="fade-left">
+				<!-- <img src="static/images/bio-img.jpg" alt=""> -->
+			</div>
+		</main>
+	</div>
 
 </section>
 
+<!-- -------------------------------------- -->
 
 <section id="music" class="music">
-	<div class="overlay"></div>
-	<h1>Latest Music</h1>
+	
+	<h1 class="section-title" data-aos="fade-down-right">Latest Music</h1>
 	<ul>
 		<li>
 			<iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/754624726&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
@@ -75,14 +100,21 @@
 	
 </section>
 
+<!-- -------------------------------------- -->
+
 <!-- <section id="events" class="events">
 
 
 </section> -->
 
 <section id="contact" class="contact">
+	<div class="overlay"></div>
+	
+</section>
 
-	<footer>
+<footer>
+	<div class="container">
+		<p>&copy; DJ-IPNOZ 2020</p>
 		<ul class="social">
 			<li class="social-cta">
 				FOLLOW ME
@@ -102,11 +134,14 @@
 				<a href="https://m.soundcloud.com/deejayipnoz" class="fab fa-soundcloud" title="Soundcloud" target="_blank"></a>
 			</li>
 		</ul>
-	</footer>
-</section>
+	</div>
+</footer>
 
-
-	<script src="scripts/main.js"></script>
+	<script src="static/scripts/main.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
 </html>
