@@ -79,11 +79,8 @@ hr {
   overflow: visible;
 }
 
-.home {
-  background: url("../images/headphones.jpg") top/cover no-repeat fixed;
-  height: 100vh;
-  width: 100%;
-  position: relative;
+html {
+  scroll-behavior: smooth;
 }
 
 .section-title {
@@ -91,15 +88,19 @@ hr {
   color: #f00;
 }
 
-.events {
-  background-color: #003355;
-  height: 70vh;
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
-.contact {
-  background: url("../images/music.jpg") center/cover fixed no-repeat;
-  height: 70vh;
-  position: relative;
+.mixcloud {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
 }
 
 .logo {
@@ -123,7 +124,7 @@ header {
   z-index: 10;
 }
 
-header nav {
+nav {
   background-color: rgba(0, 0, 0, 0);
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
@@ -139,13 +140,13 @@ header nav {
           justify-content: space-between;
 }
 
-header nav ul {
+nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-header nav ul li {
+nav li {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -153,7 +154,7 @@ header nav ul li {
   margin-left: 40px;
 }
 
-header nav ul a {
+nav a {
   display: block;
   color: #cccccc;
   font: normal 1.3rem Helvetica;
@@ -163,7 +164,7 @@ header nav ul a {
   position: relative;
 }
 
-header nav ul a::after {
+nav a::after {
   content: '';
   height: 5px;
   width: 100%;
@@ -180,14 +181,15 @@ header nav ul a::after {
   transition: .3s ease-in-out;
 }
 
-header nav ul a:hover {
+nav a:hover {
   color: #ffffff;
 }
 
-header nav ul a:hover::after {
+nav a:hover::after {
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
-  tramsform-origin: left right;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
 }
 
 .fade-in {
@@ -198,6 +200,29 @@ header nav ul a:hover::after {
 
 .fade-in .logo img {
   height: 40px;
+}
+
+.home {
+  background: url("../images/headphones.jpg") top/cover no-repeat fixed;
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home .container {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+  color: #ffffff;
 }
 
 .bio {
@@ -236,32 +261,20 @@ header nav ul a:hover::after {
   -ms-grid-column: 3;
   -ms-grid-column-span: 8;
   grid-column: 3 / 11;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.bio-container main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
 
 .bio-image {
-  background: url("../images/bio-img.jpg") center/cover;
+  background: url("../images/bio-img.jpg") top/cover;
   -webkit-box-shadow: 0 30px 10px -20px #666;
           box-shadow: 0 30px 10px -20px #666;
+  height: 500PX;
 }
 
 .bio-profile {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
   font: normal 14px Montserrat;
   padding-right: 30px;
 }
@@ -299,17 +312,79 @@ header nav ul a:hover::after {
   z-index: 9;
 }
 
+.contact {
+  background: url("../images/music.jpg") top/cover fixed no-repeat;
+  position: relative;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(450px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.contact-details {
+  position: relative;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.contact-form {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 5;
+}
+
+.contact-form form {
+  width: 100%;
+  max-width: 450px;
+  margin: 100px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contact-form form input, .contact-form form textarea, .contact-form form button {
+  font: normal 1.3rem Montserrat;
+}
+
+.contact-form form input, .contact-form form textarea {
+  border: 1px solid #dddddd;
+  margin-bottom: 20px;
+  color: #ffffff;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.contact-form form label {
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.contact-form form button {
+  cursor: pointer;
+  border: none;
+  padding: 15px 0;
+  color: #ffffff;
+  background-color: #f00;
+}
+
 footer {
   height: 110px;
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
-  z-index: 10;
 }
 
 footer .container {
@@ -319,9 +394,9 @@ footer .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -377,27 +452,4 @@ footer p {
 .social a:hover {
   background-color: white;
   color: #c10000;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-p {
-  margin: 10px 0;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.mixcloud {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 2;
 }

@@ -1,0 +1,41 @@
+
+.contact
+	background: url('../images/music.jpg') top/cover fixed no-repeat
+	position: relative
+	display: grid 
+	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr) )
+	&-details
+		position: relative
+		z-index: 5
+		background-color: rgba(0, 0, 0, .9)
+	&-form
+		background-color: rgba(0,0,0,.9)
+		display: flex
+		justify-content: center
+		position: relative
+		z-index: 5
+		form
+			width: 100%
+			max-width: 450px
+			margin: 100px 20px
+			display: flex
+			flex-direction: column
+			input, textarea, button
+				font: normal 1.3rem Montserrat
+			input, textarea
+				border: 1px solid #dddddd
+				margin-bottom: 20px
+				color: #ffffff
+				padding: 10px
+				background-color: rgba(0,0,0,.7)
+			label
+				color: #ffffff
+				margin-bottom: 5px
+			button
+				cursor: pointer
+				border: none
+				padding: 15px 0
+				color: #ffffff
+				background-color: #f00
+
+				

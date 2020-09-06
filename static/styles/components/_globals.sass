@@ -1,0 +1,34 @@
+html 
+	scroll-behavior: smooth
+
+
+.section-title
+	font: bold 3rem Montserrat
+	color: #f00
+
+
+.overlay
+	position: absolute
+	width: 100%
+	height: 100%
+	z-index: 1
+	background-color: rgba(0, 0, 0, .7)
+
+
+.mixcloud
+	position: absolute
+	bottom: 0
+	left: 0
+	z-index: 2
+		
+@mixin bp-small
+	@media only screen and (max-width: 36em)
+		@content
+
+// @mixin bp-mid 
+// 	@media only screen and (width <= 48em)
+// 		@content
+
+// @mixin bp-large 
+// 	@media only screen and (width <= 62em)
+// 		@content

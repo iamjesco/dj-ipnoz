@@ -23,15 +23,12 @@
 		z-index: 5
 		margin: 100px 0
 		grid-column: 3 / 11
-		display: flex
-		flex-direction: column
-		main 
-			display: grid
-			grid-template-columns: 1fr 1fr
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr) )
 	&-image
-		background: url('../images/bio-img.jpg') center/cover
+		background: url('../images/bio-img.jpg') top/cover
 		box-shadow: 0 30px 10px -20px #666
+		height: 500PX
 	&-profile
-		flex-grow: 1
 		font: normal 14px Montserrat
 		padding-right: 30px
