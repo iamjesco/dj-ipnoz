@@ -1,16 +1,40 @@
 
-footer
-	height: 110px
-	width: 100%
-	background-color: rgba(0, 0, 0, 1)
-	display: grid
-	grid-template-columns: repeat(12, 1fr)
-	.container
-		grid-column: 3 / 11
+.footer
+	display: none
+	+bp-large
+		display: block 
+		width: 100%
+		background-color: rgba(0, 0, 0, 1)
+		position: fixed
+		bottom: 0
+		z-index: 10
+
+		&_container
+			margin: 0 200px
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		&_copy 
+			font: normal 1rem Montserrat
+			color: #fff
+
+.footer_social
+	display: flex
+	justify-content: center
+	margin: 20px 0
+	a
+		font-size: 1.2rem
+		width: 40px
+		height: 40px
+		margin: 10px
 		display: flex
 		justify-content: center
 		align-items: center
-	p 
-		font: normal 1rem Montserrat
-		color: #fff
+		border-radius: 50%
+		transition: .3s ease-in-out
+		color: #ffffff
+		&:hover
+			// background-image: linear-gradient( #900, #000)
+			color: #ff0000
     

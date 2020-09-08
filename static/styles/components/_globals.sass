@@ -1,18 +1,8 @@
 html 
 	scroll-behavior: smooth
 
+$main-font: Montserrat, sans-serif
 
-.section-title
-	font: bold 3rem Montserrat
-	color: #f00
-
-
-.overlay
-	position: absolute
-	width: 100%
-	height: 100%
-	z-index: 1
-	background-color: rgba(0, 0, 0, .7)
 
 
 .mixcloud
@@ -21,7 +11,8 @@ html
 	left: 0
 	z-index: 2
 		
-@mixin bp-small
+
+=bp-small
 	@media only screen and (max-width: 36em)
 		@content
 
@@ -29,6 +20,6 @@ html
 // 	@media only screen and (width <= 48em)
 // 		@content
 
-// @mixin bp-large 
-// 	@media only screen and (width <= 62em)
-// 		@content
+=bp-large 
+	@media only screen and (min-width: 62em)
+		@content

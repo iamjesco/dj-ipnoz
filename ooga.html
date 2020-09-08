@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/slick-1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="static/css/slick-1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="static/css/styles.css" />
+</head>
+<body>
+    
+
+<section id="bio" class="bio">
+
+    <div class="bio_bg"></div>
+    <h1 class="bio_title" data-aos="fade-down-right">About</h1>
+    
+    <div class="bio_list">
+        <div>
+            
+            <p>With a dynamic energy to his work, his sound is responsible for creating musical journies at events, in theatres, and in clubs.
+            With his father's love for the rhythm, Ipnoz grew up a keen DJ, playing to the sounds of the city; winning over every party he plays.</p><p> He works internationally, bringing the sound of his city to lives across the world. For him, it's about creating a sound that can become style it's own.</p>
+            <p> Doing this, he has influenced many clubs in France, many African Countries, The US, The Caribbean and has had a pivotal role in bringing Afrobeats to life in Curacao.</p>
+            	
+        
+        </div>
+
+        <div>
+            <img src="static/images/bio-img.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="static/images/bio-img2.jpg" alt="">
+        </div>
+
+        <div>
+            <p>His artistical influence draws from artists like Snoop Dogg, Method Man & Redman, Bone Thugs' n' Harmony, 
+            Flo Rida, Miguel, Maitre Gims and Trackdilla and DJs' collaborations from Krisfader, Young Son, MystykalKut, Ewone, Alex Gewoon, Noise and more. 
+            <p>It's music that pairs perfectly to products from Belvedere, Luc Belaire and New Era to Coca Cola. </p>
+            <p>Immersed on the scene, Ipnoz has truly encaptured the sound of the island, keeping his ear to the ground as a curator of eclectic events. </p>
+            <p>With a clear vision for his future on the underground music scene, the city will never sound the same with Ipnoz around.
+            </p>	
+        </div>
+
+    </div>
+</section>
+
+<script src="static/scripts/main.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="static/css/slick-1.8.1/slick/slick.min.js"></script>
+<script>
+    $('.bio_list').slick({
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        responsive: [
+    {
+      breakpoint: 480,
+      settings: "unslick"
+    }]
+    });
+
+var filtered = false;
+
+$('.js-filter').on('click', function(){
+  if (filtered === false) {
+    $('.filtering').slick('slickFilter',':even');
+    $(this).text('Unfilter Slides');
+    filtered = true;
+  } else {
+    $('.filtering').slick('slickUnfilter');
+    $(this).text('Filter Slides');
+    filtered = false;
+  }
+});
+</script>
+
+</body>
+</html>

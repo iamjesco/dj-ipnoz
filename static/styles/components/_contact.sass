@@ -1,41 +1,84 @@
 
 .contact
-	background: url('../images/music.jpg') top/cover fixed no-repeat
-	position: relative
-	display: grid 
-	grid-template-columns: repeat(auto-fit, minmax(450px, 1fr) )
-	&-details
+
+	+bp-large
+		padding: 150px 200px 
+		background-color: rgba(0,0,0,.7)
 		position: relative
-		z-index: 5
-		background-color: rgba(0, 0, 0, .9)
-	&-form
-		background-color: rgba(0,0,0,.9)
 		display: flex
-		justify-content: center
-		position: relative
-		z-index: 5
-		form
+		flex-direction: column
+		
+		&_bg
+			position: absolute 
+			top: 0
+			left: 0
+			z-index: -1
+			height: 100%
 			width: 100%
-			max-width: 450px
-			margin: 100px 20px
+			background: url('../images/red.png') bottom/cover fixed 
+		
+		&_title
+			font: normal 2rem Montserrat
+			margin-bottom: 50px
+			color: #ffffff
+			width: 100%
+			text-align: center
+
+		&_container 
+			display: flex 
+			justify-content: center
+			// flex-direction: row
+
+		// &_details
+		// 	flex: 1 1 450px
+		// 	display: flex 
+		// 	justify-content: center
+		// 	align-items: center
+		&_list
+			li
+				margin-bottom: 30px
+			h1 
+				font: normal 2rem Montserrat
+				color: #ffffff
+			p 
+				font: normal 1.3rem Montserrat
+				color: #ffffff
+			a 
+				color: #ffffff
+
+		&_form
+			font: normal 1.3rem Montserrat
+			width: 700px
+			// flex: 1 1 450px
+			// margin-right: 100px
 			display: flex
+			justify-content: center
+			position: relative
 			flex-direction: column
+			p 
+				color: #ffffff
+				margin-bottom: 30px
 			input, textarea, button
 				font: normal 1.3rem Montserrat
 			input, textarea
 				border: 1px solid #dddddd
-				margin-bottom: 20px
+				margin-bottom: 30px
 				color: #ffffff
 				padding: 10px
 				background-color: rgba(0,0,0,.7)
 			label
 				color: #ffffff
-				margin-bottom: 5px
+				margin-bottom: 10px
 			button
-				cursor: pointer
-				border: none
-				padding: 15px 0
+				margin: 30px 100px
 				color: #ffffff
-				background-color: #f00
+				display: inline-block
+				border: 1px solid #ff0000
+				border-radius: 10px
+				padding: 15px 45px
+				cursor: pointer
+				background-image: linear-gradient( #600, #000)
+				&:hover 
+					background-image: linear-gradient( #f00, #000)
 
 				

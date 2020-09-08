@@ -1,62 +1,117 @@
 
-
-.logo
-	margin: 15px 0 
-	img
-		height: 60px
-		transition: .5s ease-in-out
-
-header
+.header
 	position: fixed
-	width: 100%
 	top: 0
-	display: grid 
-	grid-template-columns: repeat(12, 1fr)
+	width: 100%
 	z-index: 10
+	background-color: rgba(0, 0, 0, .8)
+	transition: background-color .5s ease-in-out
+
+	&_container
+		position: relative
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		margin: 0 20px
+
+	&_logo
+		display: none
+
+	+bp-large
+		position: fixed
+		&_container
+			margin: 0 200px
+			justify-content: space-between
+		&_logo
+			display: inline-block
+			img
+				margin: 20px 0 
+				
+				height: 50px
+				transition: .5s ease-in-out
+				
+
+
+.navigation_lg
+	ul 
+		display: none
+	+bp-large
+		ul
+			display: flex
+		li
+			text-align: center
+			margin-left: 40px
+		a			
+			display: block
+			color: #cccccc
+			font: normal 1.5rem $main-font
+			padding: 20px 0
+			transition: .3s ease-in-out
+			position: relative
+			&::after
+				content: ''
+				height: 5px
+				width: 100%
+				transform: scaleX(0)
+				transform-origin: left
+				background-color: #CA1B01
+				position: absolute
+				left: 0
+				bottom: 0
+				z-index: 0
+				transition: .3s ease-in-out
+			&:hover
+				color: #ffffff
+				&::after
+					transform: scaleX(1)
+					transform-origin: top right
+
+
+.navigation_bars
+	color: #ffffff
+	font-size: 2rem
+	margin: 20px 0
+	+bp-large
+		display: none
+
+.navigation_sm
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 0
+	z-index: 11
+	background-color: rgba(0,0,0,.9)
+	overflow: hidden
+	ul 
+		margin-top: 150px
+	li 
+		text-align: center
+		border-bottom: 1px solid rgba(250,0,0,.5)
+	a 
+		color: #ffffff
+		display: block
+		text-align: center
+		font: normal 1.8rem $main-font
+		padding: 20px 0
+		&:hover 
+			background-image: linear-gradient( #600, #000)
+			color: #ffffff
 	
 
-nav
-	background-color: rgba(0, 0, 0, 0)
-	grid-column: 3 / 11
-	display: flex
-	align-items: center
-	justify-content: space-between
-	ul
-		display: flex
-	li
-		flex-grow: 1
-		text-align: center
-		margin-left: 40px
-	a			
-		display: block
-		color: #cccccc
-		font: normal 1.3rem Helvetica
-		padding: 20px 0
-		transition: .3s ease-in-out
-		position: relative
-		&::after
-			content: ''
-			height: 5px
-			width: 100%
-			transform: scaleX(0)
-			transform-origin: left
-			background-color: #CA1B01
-			position: absolute
-			left: 0
-			bottom: 0
-			z-index: 0
-			transition: .3s ease-in-out
-		&:hover
-			color: #ffffff
-			&::after
-				transform: scaleX(1)
-				transform-origin: top right
-	
 
 .fade-in
-	background-color: rgba(0, 0, 0, 0.8)
-	transform: translateY(0)
-	.logo
-		img
-			height: 40px
+	background-color: rgba(0, 0, 0, .9)
 
+
+@keyframes open
+	from
+		height: 0
+	to
+		height: 100vh
+
+@keyframes close
+	from
+		height: 100vh
+	to
+		height: 0
