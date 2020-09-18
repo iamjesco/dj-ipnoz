@@ -1,40 +1,41 @@
 
 .footer
-	display: none
-	+bp-large
-		display: block 
-		width: 100%
-		background-color: rgba(0, 0, 0, 1)
-		position: fixed
-		bottom: 0
-		z-index: 10
-
-		&_container
-			margin: 0 200px
-			display: flex
-			justify-content: space-between
-			align-items: center
-
-		&_copy 
-			font: normal 1rem Montserrat
-			color: #fff
-
-.footer_social
+	width: 100%
+	height: 30vh
 	display: flex
 	justify-content: center
-	margin: 20px 0
+	align-items: center
+	background-color: #222222
+	position: fixed
+	bottom: 0
+	z-index: 0
+	box-shadow: inset 0 0 40px 20px #000
+
+	&__container
+		align-items: center
+		text-align: center
+	
+	&__logo
+		display: inline-block
+		img
+			margin-left: 20px 
+			height: 70px
+
+	&__copy 
+		text-align: center
+		font: normal .875rem Montserrat
+		color: #fff
+
+.footer_social
+
+	display: flex
+	justify-content: center
 	a
-		font-size: 1.2rem
-		width: 40px
-		height: 40px
-		margin: 10px
+		font-size: 1.5rem
+		margin: 40px 20px
 		display: flex
 		justify-content: center
 		align-items: center
-		border-radius: 50%
 		transition: .3s ease-in-out
 		color: #ffffff
-		&:hover
-			// background-image: linear-gradient( #900, #000)
-			color: #ff0000
     

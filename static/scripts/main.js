@@ -25,16 +25,30 @@ window.addEventListener("scroll", function(){
 })
 
 
-// FUNCTION TO ACTIVATE BURGER MENU
-document.getElementById("bars").addEventListener("click", openNav);
+// ---------------------------------------------------	
+// 		FUNCTIONS TO ACTIVATE BURGER MENU
+// ---------------------------------------------------
 
-document.getElementById("cross").addEventListener("click", closeNav);
+document.getElementById("bars").addEventListener("click", openNav);
+document.getElementById("times").addEventListener("click", closeNav);
+const navigation = document.getElementById("header__nav");
 
 function openNav() {
-  document.getElementById("navigation_sm").style.cssText = "animation: open .5s forwards;";
+  navigation.style.cssText = "animation: slide-in .5s forwards;";
 }
 
 function closeNav() {
-  document.getElementById("navigation_sm").style.cssText = "animation: close .5s forwards;";
+  navigation.style.cssText = "animation: slide-out .5s forwards;";
 }
 
+// ---------------------------------------------------	
+// 		FUNCTION TO MAKE SCROLLUP BTN APPEAR
+// ---------------------------------------------------
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("scrollUp").style.display = "block";
+  } else {
+    document.getElementById("scrollUp").style.display = "none";
+  }
+}

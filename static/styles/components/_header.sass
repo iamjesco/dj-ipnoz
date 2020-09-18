@@ -1,117 +1,70 @@
 
 .header
+	height: 70px
 	position: fixed
 	top: 0
 	width: 100%
 	z-index: 10
-	background-color: rgba(0, 0, 0, .8)
-	transition: background-color .5s ease-in-out
+	background-color: rgba(0, 0, 0, .5)
+	display: flex
+	justify-content: space-between
+	align-items: center
 
-	&_container
-		position: relative
-		display: flex
-		justify-content: flex-end
-		align-items: center
-		margin: 0 20px
+	&__logo
+		display: inline-block
+		img
+			margin-left: 20px 
+			height: 30px
 
-	&_logo
-		display: none
-
-	+bp-large
+	&__icon
+		color: #ffffff
+		font-size: 1.7rem
+		margin-right: 20px
+		border: none
+		cursor: pointer
+		transition: .3s ease-in-out
+		&:hover 
+			color: #CA1B01
+	
+	&__nav 
+		background-image: linear-gradient(#000 50%, transparent)
 		position: fixed
-		&_container
-			margin: 0 200px
-			justify-content: space-between
-		&_logo
-			display: inline-block
-			img
-				margin: 20px 0 
-				
-				height: 50px
-				transition: .5s ease-in-out
-				
+		top: 0
+		right: -250px
+		width: 250px
+		height: 100vh
 
-
-.navigation_lg
-	ul 
-		display: none
-	+bp-large
-		ul
+	&__list
+		li:nth-child(1)
+			height: 70px
 			display: flex
-		li
-			text-align: center
-			margin-left: 40px
-		a			
+			align-items: center
+			justify-content: flex-end
+			margin-bottom: 50px
+		a 
+			color: #ffffff
 			display: block
-			color: #cccccc
+			text-align: center
 			font: normal 1.5rem $main-font
 			padding: 20px 0
-			transition: .3s ease-in-out
-			position: relative
-			&::after
-				content: ''
-				height: 5px
-				width: 100%
-				transform: scaleX(0)
-				transform-origin: left
-				background-color: #CA1B01
-				position: absolute
-				left: 0
-				bottom: 0
-				z-index: 0
-				transition: .3s ease-in-out
-			&:hover
+			&:hover 
 				color: #ffffff
-				&::after
-					transform: scaleX(1)
-					transform-origin: top right
-
-
-.navigation_bars
-	color: #ffffff
-	font-size: 2rem
-	margin: 20px 0
-	+bp-large
-		display: none
-
-.navigation_sm
-	position: fixed
-	top: 0
-	left: 0
-	width: 100%
-	height: 0
-	z-index: 11
-	background-color: rgba(0,0,0,.9)
-	overflow: hidden
-	ul 
-		margin-top: 150px
-	li 
-		text-align: center
-		border-bottom: 1px solid rgba(250,0,0,.5)
-	a 
-		color: #ffffff
-		display: block
-		text-align: center
-		font: normal 1.8rem $main-font
-		padding: 20px 0
-		&:hover 
-			background-image: linear-gradient( #600, #000)
-			color: #ffffff
 	
 
+// ---------------------------------------------------	
+// 		KEYFRAMES FOR THE MENU ANIMATION
+// ---------------------------------------------------	
 
-.fade-in
-	background-color: rgba(0, 0, 0, .9)
-
-
-@keyframes open
+@keyframes slide-in
 	from
+		right: 0
 		height: 0
 	to
+		right: 0
 		height: 100vh
 
-@keyframes close
+@keyframes slide-out
 	from
-		height: 100vh
+		right: 0
 	to
-		height: 0
+		right: -250px

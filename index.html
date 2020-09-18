@@ -16,35 +16,32 @@
 
 <header id="header" class="header">
 
-	<div class="header_container">
-
-		<a href="#" class="header_logo">
-			<img src="static/images/logo.png" alt="">
+		<a href="#home" class="header__logo">
+				<img src="static/images/logo.png" alt="DJ-Ipnoz Logo">
 		</a>
+		
+		<i id="bars" class="fas fa-bars header__icon"></i>
 
-		<nav class="navigation_lg">
-			<ul>
-				<li><a href="#home">Home</a></li>
-				<li><a href="#bio">Bio</a></li>
-				<li><a href="#music">Music</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
-
-		<i id="bars" class="fas fa-bars navigation_bars"></i>
-
-		<nav id="navigation_sm" class="navigation_sm">
-			<ul>
+		<nav id="header__nav" class="header__nav">
+		
+			<ul class="header__list">
+				<li><i id="times" class="fas fa-times header__icon"></i></li>
 				<li><a href="#home" onclick="closeNav()">Home</a></li>
 				<li><a href="#bio" onclick="closeNav()">Bio</a></li>
 				<li><a href="#music" onclick="closeNav()">Music</a></li>
 				<li><a href="#contact" onclick="closeNav()">Contact</a></li>
 			</ul>
 		</nav>
-	</div>
-
 </header>
 
+
+<!-- ----------------------------------------
+		SCROLL TO TOP BUTTON
+---------------------------------------- -->
+
+<a href="#home">
+	<i id="scrollUp" class="fas fa-arrow-circle-up scrollup"></i>
+</a>
 
 
 <!-- -------------------------------------- -->
@@ -67,7 +64,7 @@
 
 <!-- -------------------------------------- -->
 
-<section id="bio" class="bio">
+<!-- <section id="bio" class="bio">
 
     <div class="bio_bg"></div>
 
@@ -101,11 +98,11 @@
         </div>
 
     </div>
-</section>
+</section> -->
 
 <!-- -------------------------------------- -->
 
-	<section id="music" class="music">
+	<!-- <section id="music" class="music">
 		<div class="music_bg"></div>
 		<h1 class="music_title">Latest Music</h1>
 		
@@ -129,7 +126,7 @@
 				<img src="static/images/ipnoz-3.png" alt="">
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 <!-- -------------------------------------- -->
 
@@ -138,7 +135,7 @@
 
 	</section> -->
 
-	<section id="contact" class="contact">
+	<!-- <section id="contact" class="contact">
 		<div class="contact_bg"></div>
 		<h1 class="contact_title">Contact</h1>
 
@@ -155,7 +152,7 @@
 				<label for="name">Inquiry</label>
 				<textarea name="inquiry" id="inquiry" cols="30" rows="5"></textarea>
 				<button type="submit">Submit</button>
-			</form>
+			</form> -->
 		
 
 			<!-- <article class="contact_details">
@@ -176,37 +173,41 @@
 				</ul>
 
 			</article> -->
-		</article>
-	</section>
 
-	<footer class="footer">
-		<div class="footer_container">
+		<!-- </article>
+	</section> -->
 
-			<p class="footer_copy">&copy; Copyright DJ-IPNOZ | 2020</p>
-		
-
-			<ul class="footer_social">
-				<li>
-					<a href="https://www.facebook.com/DeejayIpnoz" class="fab fa-facebook-f" title="Facebook" target="_blank"></a>
-				</li>
-				<li><a href="https://www.mixcloud.com/DjIpnoZ/"	class="fab fa-mixcloud" title="Mixcloud" target="_blank"></a>
-				</li>
-				<li>
-					<a href="https://www.snapchat.com/add/deejayipnoz" class="fab fa-snapchat-ghost" title="Snapchat" target="_blank"></a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/ipnoz_dyat/" class="fab fa-instagram" title="Instagram" target="_blank"></a>
-				</li>
-				<li>
-					<a href="https://m.soundcloud.com/deejayipnoz" class="fab fa-soundcloud" title="Soundcloud" target="_blank"></a>
-				</li>
-			</ul>
-
-		</div>
-	</footer>
-
+	
 </main>
 
+<footer class="footer">
+
+	<section class="footer__container">
+
+		<a href="#home" class="footer__logo">
+			<img src="static/images/logo.png" alt="DJ-Ipnoz Logo">
+		</a>
+	
+		<ul class="footer_social">
+			<li>
+				<a href="https://www.facebook.com/DeejayIpnoz" class="fab fa-facebook-f" title="Facebook" target="_blank"></a>
+			</li>
+			<li><a href="https://www.mixcloud.com/DjIpnoZ/"	class="fab fa-mixcloud" title="Mixcloud" target="_blank"></a>
+			</li>
+			<li>
+				<a href="https://www.snapchat.com/add/deejayipnoz" class="fab fa-snapchat-ghost" title="Snapchat" target="_blank"></a>
+			</li>
+			<li>
+				<a href="https://www.instagram.com/ipnoz_dyat/" class="fab fa-instagram" title="Instagram" target="_blank"></a>
+			</li>
+			<li>
+				<a href="https://m.soundcloud.com/deejayipnoz" class="fab fa-soundcloud" title="Soundcloud" target="_blank"></a>
+			</li>
+		</ul>
+		<p class="footer__copy">&copy; 2020 Dj-Ipnoz</p>
+	</section>
+
+</footer>
 
 
 	<script src="static/scripts/main.js"></script>
