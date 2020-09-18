@@ -84,11 +84,8 @@ html {
 }
 
 main {
-  background-color: #ffffff;
   position: relative;
   z-index: 5;
-  border-bottom: 1px solid #CA1B01;
-  margin-bottom: 29vh;
   -webkit-box-shadow: 0 30px 20px -20px #000000;
           box-shadow: 0 30px 20px -20px #000000;
 }
@@ -467,6 +464,7 @@ iframe {
 .bio {
   position: relative;
   overflow: hidden;
+  background-color: #ffffff;
 }
 
 .bio h2 {
@@ -867,4 +865,8 @@ iframe {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
   color: #ffffff;
+}
+
+.footer-clear {
+  height: 29vh;
 }
