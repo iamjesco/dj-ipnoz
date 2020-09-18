@@ -522,7 +522,7 @@ iframe {
             transform: scale(9);
     top: 100px;
     left: 500px;
-    z-index: -1;
+    z-index: 0;
     opacity: .1;
   }
   .bio__title {
