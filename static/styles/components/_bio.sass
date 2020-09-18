@@ -1,39 +1,63 @@
 
 .bio
-	width: 100%
 	position: relative
-	padding: 100px 0 50px 0
+	overflow: hidden
+	
+	h2 
+		display: none
+		
+	&__text
+		flex: 1
+		padding: 0 20px
+		p 
+			font: $body-font
+			color: #555555
+			margin-bottom: 20px
 
-	&_bg
-		position: absolute 
-		top: 0
-		left: 0
-		z-index: -1
-		height: 100%
-		width: 100%
-		background: url('../images/ipnoz3.jpg') center/cover fixed
-		opacity: .2
-
-	&_title
-		font: normal 2rem Montserrat
-		color: #cc0000
-		width: 100%
-		text-align: center
-		margin-bottom: 50px
-	p 	
-		font: normal 1.3rem Montserrat
-		margin: 0 20px 20px 20px
+	&__title
+		margin-top: 70px 
+		margin-bottom: 30px
+		font: $header-font
+		color: $main-color
+		
 	img 
 		width: 100%
-		margin-bottom: 20px 
-	&_img2 
-		display: none
 
-	
 	+bp-large
-		padding: 150px 0
-		&_title
-			margin-bottom: 100px
+		display: flex 
+		flex-direction: column
+		padding: 100px 0
+
+		.img2
+			display: none
+			
+		h2
+			display: block
+			font: $header-font
+			color: rgba(200, 0, 0, .3)
+			position: absolute 
+			transform: scale(9)
+			top: 100px
+			left: 500px
+			z-index: -1
+			opacity: .1
+
+		&__title
+			margin-top: 0
+
+		&__container
+			display: flex
+			margin: 0 200px
+
+		&__text
+			margin-right: 20px
+			padding: 0
+
+		&__img
+			flex: 1
+			img
+				box-shadow: 0 20px 20px -15px #333
+
 		&_list
 			margin: 0 200px
 			display: flex
@@ -42,10 +66,7 @@
 				img 
 					width: 100%
 					box-shadow: 0 30px 10px -20px #666
-				p 
-					font: normal 1.5rem Montserrat
-					color: #555555
-					margin: 0 20px 20px 20px
+				
 		
 
 

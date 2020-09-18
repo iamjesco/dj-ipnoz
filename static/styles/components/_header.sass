@@ -4,8 +4,8 @@
 	position: fixed
 	top: 0
 	width: 100%
-	z-index: 10
-	background-color: rgba(0, 0, 0, .5)
+	z-index: 15
+	background-color: rgba(0, 0, 0, .7)
 	display: flex
 	justify-content: space-between
 	align-items: center
@@ -30,9 +30,10 @@
 		background-image: linear-gradient(#000 50%, transparent)
 		position: fixed
 		top: 0
-		right: -250px
+		right: 0
 		width: 250px
-		height: 100vh
+		height: 0
+		overflow: hidden
 
 	&__list
 		li:nth-child(1)
@@ -45,7 +46,7 @@
 			color: #ffffff
 			display: block
 			text-align: center
-			font: normal 1.5rem $main-font
+			font: $header-font
 			padding: 20px 0
 			&:hover 
 				color: #ffffff
@@ -56,15 +57,41 @@
 // ---------------------------------------------------	
 
 @keyframes slide-in
-	from
-		right: 0
-		height: 0
+	from 
+		height: 0vh
 	to
-		right: 0
 		height: 100vh
 
 @keyframes slide-out
-	from
-		right: 0
+	from 
+		height: 100vh
 	to
-		right: -250px
+		height: 0vh
+
+@keyframes rotate-ccw-out
+	from 
+		opacity: 1
+	to 
+		opacity: 0
+		transform: rotate(-360deg)
+
+@keyframes rotate-ccw-in
+	from 
+		opacity: 0
+	to 
+		opacity: 1
+		transform: rotate(-360deg)
+
+@keyframes rotate-cw-out
+	from 
+		opacity: 1
+	to 
+		opacity: 0
+		transform: rotate(360deg)
+
+@keyframes rotate-cw-in
+	from 
+		opacity: 0
+	to 
+		opacity: 1
+		transform: rotate(360deg)

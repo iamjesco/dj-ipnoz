@@ -1,15 +1,22 @@
 html 
 	scroll-behavior: smooth
 
-$main-font: Montserrat, sans-serif
+
+$header-font: 700 2.5rem Montserrat, sans-serif
+$body-font: normal 1rem Montserrat, sans-serif
+$mid-font: normal 1.3rem Montserrat
+
+$main-color: #CA1B01
 
 
 main 
+	background-color: #ffffff
 	position: relative
-	z-index: 1
-	border-bottom: 1px solid #f00
+	z-index: 5
+	border-bottom: 1px solid $main-color
 	margin-bottom: 29vh
 	box-shadow: 0 30px 20px -20px #000000
+	
 
 .mixcloud
 	position: absolute
@@ -22,13 +29,13 @@ main
 // ------------------------------------------------
 .scrollup
 	display: none
-	color: #FF9D00
+	color: $main-color
 	position: fixed
 	bottom: 20px
 	right: 20px
-	z-index: 15
+	z-index: 20
 	transition: .3s ease-in-out
-	font-size: 1.8rem
+	font-size: 2rem
 	&:hover
 		cursor: pointer
 		transform: scale(1.3)

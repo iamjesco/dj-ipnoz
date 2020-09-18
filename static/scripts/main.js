@@ -3,6 +3,9 @@ window.addEventListener('scroll', function () {
 	scrollChange();
 });
 
+window.onscroll = function() {
+  scrollFunction();
+};
 
 // function scrollChange() {
 // 	const header = document.getElementById('header');
@@ -29,15 +32,22 @@ window.addEventListener("scroll", function(){
 // 		FUNCTIONS TO ACTIVATE BURGER MENU
 // ---------------------------------------------------
 
-document.getElementById("bars").addEventListener("click", openNav);
-document.getElementById("times").addEventListener("click", closeNav);
+const bars = document.getElementById("bars");
+const times = document.getElementById("times");
 const navigation = document.getElementById("header__nav");
 
+bars.addEventListener("click", openNav);
+times.addEventListener("click", closeNav);
+
 function openNav() {
+  bars.style.cssText = "animation: rotate-ccw-out .5s forwards;";
+  times.style.cssText = "animation: rotate-ccw-in .5s forwards;";
   navigation.style.cssText = "animation: slide-in .5s forwards;";
 }
 
 function closeNav() {
+  times.style.cssText = "animation: rotate-cw-out .5s forwards;";
+  bars.style.cssText = "animation: rotate-cw-in .5s forwards;";
   navigation.style.cssText = "animation: slide-out .5s forwards;";
 }
 
