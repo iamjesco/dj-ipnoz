@@ -165,7 +165,6 @@ main {
   position: fixed;
   top: 0;
   right: 0;
-  width: 250px;
   height: 0;
   overflow: hidden;
 }
@@ -194,6 +193,75 @@ main {
 
 .header__list a:hover {
   color: #ffffff;
+}
+
+@media only screen and (min-width: 62em) {
+  .header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+    background-color: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__logo {
+    display: inline-block;
+  }
+  .header img {
+    margin-left: 200px;
+    height: 50px;
+  }
+  .header__icon {
+    display: none;
+  }
+  .header__nav {
+    position: relative;
+    overflow: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 200px;
+    height: 100%;
+  }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .header__list li:nth-child(1) {
+    display: none;
+  }
+  .header__list li {
+    margin-left: 40px;
+  }
+  .header__list a {
+    color: #ffffff;
+    display: block;
+    text-align: center;
+    font: normal 1rem Montserrat, sans-serif;
+    padding: 20px 0;
+    -webkit-transition: color .3s ease-in-out;
+    transition: color .3s ease-in-out;
+  }
+  .header__list a:hover {
+    color: #CA1B01;
+  }
 }
 
 @-webkit-keyframes slide-in {
