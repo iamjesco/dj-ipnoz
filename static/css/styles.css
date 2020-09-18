@@ -85,6 +85,7 @@ html {
 
 body {
   background-color: #000000;
+  margin-bottom: 39vh;
 }
 
 main {
@@ -92,6 +93,7 @@ main {
   z-index: 5;
   -webkit-box-shadow: 0 30px 20px -20px #000000;
           box-shadow: 0 30px 20px -20px #000000;
+  pointer-events: none;
 }
 
 .mixcloud {
@@ -873,4 +875,5 @@ iframe {
 
 .footer-clear {
   height: 39vh;
+  pointer-events: none;
 }
