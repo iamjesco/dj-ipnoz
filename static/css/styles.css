@@ -391,7 +391,7 @@ main {
 }
 
 .home {
-  background: url("../images/headphones.jpg") top/cover no-repeat fixed;
+  background: url("../images/home-ipnoz-headphone.jpg") top/cover no-repeat fixed;
   height: 100vh;
   width: 100%;
   position: relative;
@@ -441,7 +441,7 @@ main {
     width: 40vw;
   }
   .home_text img {
-    width: 30vw;
+    width: 450px;
   }
 }
 
@@ -566,90 +566,9 @@ iframe {
   }
 }
 
-.music {
-  position: relative;
-  padding: 100px 20px 0 20px;
-  position: relative;
-}
-
-.music_bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.music_list {
-  opacity: .7;
-  position: relative;
-  margin-bottom: 100px;
-  z-index: 9;
-}
-
-.music_list li {
-  margin-bottom: 40px;
-}
-
-@media only screen and (min-width: 62em) {
-  .music {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 150px 200px;
-    color: #ffffff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .music_bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    width: 100%;
-    background: url("../images/music-bg.jpeg") center/cover fixed;
-  }
-  .music_title {
-    font: normal 2rem Montserrat;
-    margin-bottom: 50px;
-    color: #ffffff;
-    width: 100%;
-    text-align: center;
-  }
-  .music_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-  .music_list {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 450px;
-            flex: 1 1 450px;
-    margin-right: 20px;
-  }
-  .music_image {
-    -webkit-box-flex: 1;
-        -ms-flex: 1 1 450px;
-            flex: 1 1 450px;
-    margin-left: 20px;
-  }
-  .music_image img {
-    width: 100%;
-  }
-}
-
 .contact {
   position: relative;
-  background: url("../images/music-bg.jpeg") bottom/cover fixed;
+  background: url("../images/contact-bg-image.jpg") bottom/cover fixed;
 }
 
 .contact h2 {

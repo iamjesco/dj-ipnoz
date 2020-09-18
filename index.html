@@ -1,11 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<meta charset="UTF-8" />
+	<meta name="description" content="Born and raised in music, DJ Ipnoz started putting fingers on vinyls by the age of 16 in Canada." />
+	<meta name="keywords" content="Curacao, dj, djipnoz, deejaay, club, bangers, african, music,">
+  	<meta name="author" content="Jurgen Schoobaar">
+	<meta name="robots" content="follow, index">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+	<meta property="og:title" content="DJ Ipnoz offical page" />
+	<meta property="og:site_name" content="DJ Ipnoz offical page" />
+	<meta property="og:description" content="Born and raised in music, DJ Ipnoz started putting fingers on vinyls by the age of 16 in Canada." />
+	<meta property="og:image" content="https://boring-fermat-7b331f.netlify.app/static/images/ipnoz-seo-image.jpg" />
+	<meta property="og:url" content="https://boring-fermat-7b331f.netlify.app/" />
+	<meta name="twitter:image:alt" content="Dj Ipnoz playing at a show" />
+    <meta name="twitter:card" content="summary" />
+
+	<link rel="stylesheet" rel="dns-prefetch" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
+	<link rel="dns-prefetch" href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="static/css/slick-1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="static/css/slick-1.8.1/slick/slick-theme.css"/>
     <link rel="stylesheet" href="static/css/styles.css" />
@@ -17,7 +30,7 @@
 <header id="header" class="header">
 
 		<a href="#home" class="header__logo">
-			<img src="static/images/logo.png" alt="DJ-Ipnoz Logo">
+			<img src="static/images/logo-opt.png" alt="DJ-Ipnoz Logo">
 		</a>
 		
 		<i id="bars" class="fas fa-bars header__icon"></i>
@@ -37,7 +50,7 @@
 		SCROLL TO TOP BUTTON
 ---------------------------------------- -->
 
-<a href="#home">
+<a href="#home" aria-label="Scroll back to top link">
 	<i id="scrollUp" class="fas fa-arrow-circle-up scrollup"></i>
 </a>
 
@@ -51,13 +64,13 @@
 		<div class="home_overlay"></div>
 
 		<div class="home_text">
-			<img src="static/images/logo.png" alt="">
+			<img src="static/images/logo-opt.png" alt="">
 			<p>
 				Turn the volume up. Get your drink poured. The future of music is bright with Ipnoz on the scene.
 			</p>
 			<a class="home_btn"  href="#contact">Contact</a>
 		</div>
-<iframe width="100%" height="60" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FDjIpnoZ%2Fafrobeats-mixology-drop-part-1%2F" frameborder="0" ></iframe>
+<iframe width="100%" height="60" name="DJ Ipnoz remix on Mixcloud sample" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FDjIpnoZ%2Fafrobeats-mixology-drop-part-1%2F" frameborder="0" ></iframe>
 	</section>
 
 <!-- -------------------------------------- -->
@@ -74,7 +87,7 @@
             With his father's love for the rhythm, Ipnoz grew up a keen DJ, playing to the sounds of the city; winning over every party he plays.</p><p> He works internationally, bringing the sound of his city to lives across the world. For him, it's about creating a sound that can become style it's own.</p>
             <p> Doing this, he has influenced many clubs in France, many African Countries, The US, The Caribbean and has had a pivotal role in bringing Afrobeats to life in Curacao.</p>
 		<div class="bio__img img2" data-aos="fade-left">
-            <img src="static/images/bio-img2.jpg" alt="">
+            <img src="static/images/bio-ipnoz-playing.jpg" alt="DJ Ipnoz playing at event" />
         </div>
             <p>His artistical influence draws from artists like Snoop Dogg, Method Man & Redman, Bone Thugs' n' Harmony, 
             Flo Rida, Miguel, Maitre Gims and Trackdilla and DJs' collaborations from Krisfader, Young Son, MystykalKut, Ewone, Alex Gewoon, Noise and more. 
@@ -86,7 +99,7 @@
         </div>
 
         <div class="bio__img" data-aos="fade-left">
-            <img src="static/images/red-beach.png" alt="">
+            <img src="static/images/bio-ipnoz-playing-red.jpg" alt="DJ Ipnoz playing at event">
         </div>
 
 	</article>
@@ -111,11 +124,11 @@
 						Question, remark or booking information needed? Or do you have a question for the management or my bookings office? Please use the contact form below.
 					</p>
 					<label for="name">Name</label>
-					<input type="text" name="name" required>
+					<input id="name" type="text" name="name" required>
 					<label for="email">Email</label>
-					<input type="email" name="email" required>
-					<label for="name">Inquiry</label>
-					<textarea name="inquiry" id="inquiry" cols="30" rows="5" required></textarea>
+					<input id="email" type="email" name="email" required>
+					<label for="inquiry">Inquiry</label>
+					<textarea id="inquiry" name="inquiry" id="inquiry" cols="30" rows="5" required></textarea>
 					
 						<button type="submit">Submit</button>
 					
@@ -152,24 +165,24 @@
 	<section class="footer__container">
 
 		<a href="#home" class="footer__logo">
-			<img src="static/images/logo.png" alt="DJ-Ipnoz Logo">
+			<img src="static/images/logo-opt.png" alt="DJ-Ipnoz Logo">
 		</a>
 	
 		<ul class="footer_social">
 			<li>
-				<a href="https://m.soundcloud.com/deejayipnoz" class="fab fa-soundcloud" title="Soundcloud" target="_blank"></a>
+				<a href="https://m.soundcloud.com/deejayipnoz" class="fab fa-soundcloud" title="Soundcloud" target="_blank" rel="noreferrer"></a>
 			</li>
 			<li>
-				<a href="https://www.mixcloud.com/DjIpnoZ/"	class="fab fa-mixcloud" title="Mixcloud" target="_blank"></a>
+				<a href="https://www.mixcloud.com/DjIpnoZ/"	class="fab fa-mixcloud" title="Mixcloud" target="_blank" rel="noreferrer"></a>
 			</li>
 			<li>
-				<a href="https://www.snapchat.com/add/deejayipnoz" class="fab fa-snapchat-ghost" title="Snapchat" target="_blank"></a>
+				<a href="https://www.snapchat.com/add/deejayipnoz" class="fab fa-snapchat-ghost" title="Snapchat" target="_blank" rel="noreferrer"></a>
 			</li>
 			<li>
-				<a href="https://www.instagram.com/djipnoz/" class="fab fa-instagram" title="Instagram" target="_blank"></a>
+				<a href="https://www.instagram.com/djipnoz/" class="fab fa-instagram" title="Instagram" target="_blank" rel="noreferrer"></a>
 			</li>
 			<li>
-				<a href="https://www.facebook.com/DeejayIpnoz" class="fab fa-facebook-f" title="Facebook" target="_blank"></a>
+				<a href="https://www.facebook.com/DeejayIpnoz" class="fab fa-facebook-f" title="Facebook" target="_blank" rel="noreferrer"></a>
 			</li>
 		</ul>
 		<p class="footer__copy">&copy; 2020 Dj-Ipnoz</p>

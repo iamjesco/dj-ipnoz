@@ -1,7 +1,7 @@
 // Call the scrollchange function when the user scrolls
-window.addEventListener('scroll', function () {
-	scrollChange();
-});
+// window.addEventListener('scroll', function () {
+// 	scrollChange();
+// });
 
 window.onscroll = function() {
   scrollFunction();
