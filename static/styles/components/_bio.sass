@@ -15,14 +15,33 @@
 			color: #555555
 			margin-bottom: 20px
 
+	.img2
+		display: inline-block
+		width: 100%
+		margin-bottom: 20px 
+
+	&__video
+		margin: 0 20px 100px 20px
+		border-radius: 10px
+		border: 1px solid #cccccc
+		flex: 1
+		overflow: hidden
+		position: relative
+		box-shadow: 0 20px 20px -15px #333
+		video 
+			display: block
+			position: relative
+			top: 30px
+			width: 100%
+			height: 240px
+			transform: scale(5.5) translateY(30px)
+
 	&__title
 		margin-top: 70px 
 		margin-bottom: 30px
 		font: $header-font
 		color: $main-color
-		
-	img 
-		width: 100%
+	
 
 	+bp-large
 		display: flex 
@@ -54,10 +73,15 @@
 			margin-right: 20px
 			padding: 0
 
-		&__img
-			flex: 1
-			img
-				box-shadow: 0 20px 20px -15px #333
+		&__video
+			margin: 0
+			video 
+				position: relative
+				top: 30px
+				width: 100%
+				height: 240px
+				transform: scale(5.5) translateY(30px)
+				
 
 		&_list
 			margin: 0 200px

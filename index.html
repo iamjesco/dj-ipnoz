@@ -39,6 +39,7 @@
 			<ul class="header__list">
 				<li><i id="times" class="fas fa-times header__icon"></i></li>
 				<li><a href="#home" onclick="closeNav()">Home</a></li>
+				<li><a href="#music" onclick="closeNav()">Music</a></li>
 				<li><a href="#bio" onclick="closeNav()">Bio</a></li>
 				<li><a href="#contact" onclick="closeNav()">Contact</a></li>
 			</ul>
@@ -68,8 +69,36 @@
 			</p>
 			<a class="home_btn"  href="#contact">Contact</a>
 		</div>
-<iframe name="DJ Ipnoz remix on Mixcloud sample" title="DJ Ipnoz remix on Mixcloud sample" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&mini=1&feed=%2FDjIpnoZ%2Fafrobeats-mixology-drop-part-1%2F" ></iframe>
 	</section>
+
+
+<!-- START MUSIC <SECTION -->
+
+<section id="music" class="music">
+	<h2>
+		Recent Music
+	</h2>
+	<div class="music__container">
+		<div class="music__img" data-aos="fade-right">
+			<img src="static/images/bio-ipnoz-playing-red.jpg" alt="DJ Ipnoz playing at event">
+		</div>
+
+		<ul class="music__list" data-aos="fade-left">
+			<li>
+				<h1 class="music__title">Recent Music</h1>
+			</li>
+			<li>
+				<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fafrobeats-mixology-drop-part-1%2F" frameborder="0" ></iframe>
+			</li>
+			<li>
+				<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fzouk-love-zouk-bordel-old-school-zouk%2F" frameborder="0" ></iframe>
+			</li>
+			<li>
+				<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fdeep-house-mixology-part-2%2F" frameborder="0" ></iframe>
+			</li>
+		</ul>
+	</div>   
+</section>
 
 
 <!-- START BIO SECTION -->
@@ -85,21 +114,26 @@
             <p>With a dynamic energy to his work, his sound is responsible for creating musical journies at events, in theatres, and in clubs.
             With his father's love for the rhythm, Ipnoz grew up a keen DJ, playing to the sounds of the city; winning over every party he plays.</p><p> He works internationally, bringing the sound of his city to lives across the world. For him, it's about creating a sound that can become style it's own.</p>
             <p> Doing this, he has influenced many clubs in France, many African Countries, The US, The Caribbean and has had a pivotal role in bringing Afrobeats to life in Curacao.</p>
-		<div class="bio__img img2" data-aos="fade-left">
-            <img src="static/images/bio-ipnoz-playing.jpg" alt="DJ Ipnoz playing at event" />
-        </div>
-            <p>His artistical influence draws from artists like Snoop Dogg, Method Man & Redman, Bone Thugs' n' Harmony, 
+			
+			<!-- <div class="bio__img " data-aos="fade-left"> -->
+				<img class="img2" data-aos="fade-left" src="static/images/bio-ipnoz-playing.jpg" alt="DJ Ipnoz playing at event" />
+			<!-- </div> -->
+            
+			<p>His artistical influence draws from artists like Snoop Dogg, Method Man & Redman, Bone Thugs' n' Harmony, 
             Flo Rida, Miguel, Maitre Gims and Trackdilla and DJs' collaborations from Krisfader, Young Son, MystykalKut, Ewone, Alex Gewoon, Noise and more. 
             <p>It's music that pairs perfectly to products from Belvedere, Luc Belaire and New Era to Coca Cola. </p>
             <p>Immersed on the scene, Ipnoz has truly encaptured the sound of the island, keeping his ear to the ground as a curator of eclectic events. </p>
             <p>With a clear vision for his future on the underground music scene, the city will never sound the same with Ipnoz around.
             </p>	
-        
         </div>
 
-        <div class="bio__img" data-aos="fade-left">
-            <img src="static/images/bio-ipnoz-playing-red.jpg" alt="DJ Ipnoz playing at event">
-        </div>
+		<div class="bio__video" data-aos="fade-left">
+			<video autoplay muted>
+				<source src="static/media/ipnoz-vid.mp4" type="video/mp4">
+				Your browser does not support the video tag.
+			</video>
+    	</div>
+		
 
 	</article>
             
