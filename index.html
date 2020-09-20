@@ -58,16 +58,30 @@
 
 <main>
 
-	<section id="home" class="home">
-				
-		<div class="home_overlay"></div>
-
-		<div class="home_text" data-aos="fade-up" data-aos-duration="3000">
+	<section id="home" class="home">	
+		<div class="home__overlay"></div>
+		<div class="home__text" data-aos="fade-up" data-aos-duration="3000">
 			<img src="static/images/logo-opt.png" alt="">
 			<p>
 				Turn the volume up. Get your drink poured. The future of music is bright with Ipnoz on the scene.
 			</p>
-			<a class="home_btn"  href="#contact">Contact</a>
+			<a class="home__btn"  href="#contact">Contact</a>
+		</div>
+		<div class="home__container">
+			<div class="home__slides fade">
+				<img src="static/images/ipnoz-headphones.jpg" />
+			</div>
+			<div class="home__slides fade">
+				<img src="static/images/ipnoz-mixing.jpg" />
+			</div>
+			<div class="home__slides fade">
+				<img src="static/images/ipnoz-equipment.jpg" />
+			</div>
+		</div>
+		<div class="home__dots">
+			<span class="dot"></span> 
+			<span class="dot"></span> 
+			<span class="dot"></span> 
 		</div>
 	</section>
 
@@ -237,7 +251,32 @@
     	AOS.init();
 
 	</script>
-	
+	<script>
+
+// ---------------------------------------------------	
+// 		HOME SLIDESHOW
+// ---------------------------------------------------
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("home__slides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+</script>
 
 </body>
 </html>
