@@ -34,7 +34,7 @@
 
 		<i id="bars" class="fas fa-bars navigation__icon"></i>
 
-		<ul id="navigation__list" class="navigation__list__mobile">
+		<ul class="navigation__list__mobile">
 			<li><i id="times" class="fas fa-times navigation__icon"></i></li>
 			<li><a href="#home" onclick="closeNav()">Home</a></li>
 			<li><a href="#music" onclick="closeNav()">Music</a></li>
@@ -71,13 +71,13 @@
 		</div>
 		<div class="home__container">
 			<div class="home__slides fade">
-				<img src="static/images/ipnoz-headphones.jpg" />
+				<img src="static/images/ipnoz-headphones.jpg" alt="Dj Ipnoz headphones" />
 			</div>
 			<div class="home__slides fade">
-				<img src="static/images/ipnoz-mixing.jpg" />
+				<img src="static/images/ipnoz-mixing.jpg" alt="Dj Ipnoz playing" />
 			</div>
 			<div class="home__slides fade">
-				<img src="static/images/ipnoz-equipment.jpg" />
+				<img src="static/images/ipnoz-equipment.jpg" alt="Dj Ipnoz laptop setup" />
 			</div>
 		</div>
 		<div class="home__dots">
@@ -104,13 +104,13 @@
 				<h1 class="music__title">Recent Music</h1>
 			</li>
 			<li>
-				<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fafrobeats-mixology-drop-part-1%2F" frameborder="0" ></iframe>
+				<iframe name="Dj Ipnoz latest remix" title="Dj Ipnoz latest remix" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fafrobeats-mixology-drop-part-1%2F" ></iframe>
 			</li>
 			<li>
-				<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fzouk-love-zouk-bordel-old-school-zouk%2F" frameborder="0" ></iframe>
+				<iframe name="Dj Ipnoz latest remix" title="Dj Ipnoz latest remix" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fzouk-love-zouk-bordel-old-school-zouk%2F"></iframe>
 			</li>
 			<li>
-				<iframe height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fdeep-house-mixology-part-2%2F" frameborder="0" ></iframe>
+				<iframe name="Dj Ipnoz latest remix" title="Dj Ipnoz latest remix" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FDjIpnoZ%2Fdeep-house-mixology-part-2%2F"></iframe>
 			</li>
 		</ul>
 	</div>   
@@ -145,7 +145,8 @@
 
 		<div class="bio__video" data-aos="fade-left">
 			<video autoplay muted playsinline>
-				<source src="static/media/ipnoz-vid.webm" type="video/mp4">
+				<source src="static/media/ipnoz-vid.webm" type="video/webm">
+				<source src="static/media/ipnoz-vid.mp4" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
     	</div>
@@ -253,10 +254,7 @@
     	AOS.init();
 
 	</script>
-	<script>
-
-
-</script>
+	
 
 </body>
 </html>
