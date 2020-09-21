@@ -80,7 +80,7 @@ window.addEventListener("scroll", function(){
 
 const bars = document.getElementById("bars");
 const times = document.getElementById("times");
-const navigation = document.getElementById("navigation__list");
+const navigation = document.getElementById("navigation");
 
 bars.addEventListener("click", openNav);
 times.addEventListener("click", closeNav);
