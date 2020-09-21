@@ -26,27 +26,29 @@
 </head>
 <body>
 	
-
-<header id="header" class="header">
-
-		<a href="#home" class="header__logo">
+<nav id="navigation" class="navigation">
+		
+		<a href="#home" class="navigation__logo">
 			<img src="static/images/logo-opt.png" alt="DJ-Ipnoz Logo" />
 		</a>
-		
-		<i id="bars" class="fas fa-bars header__icon"></i>
 
-		<nav id="header__nav" class="header__nav">
-			<ul class="header__list">
-				<li><i id="times" class="fas fa-times header__icon"></i></li>
-				<li><a href="#home" onclick="closeNav()">Home</a></li>
-				<li><a href="#music" onclick="closeNav()">Music</a></li>
-				<li><a href="#bio" onclick="closeNav()">Bio</a></li>
-				<li><a href="#contact" onclick="closeNav()">Contact</a></li>
-			</ul>
-		</nav>
-</header>
+		<i id="bars" class="fas fa-bars navigation__icon"></i>
 
+		<ul id="navigation__list" class="navigation__list__mobile">
+			<li><i id="times" class="fas fa-times navigation__icon"></i></li>
+			<li><a href="#home" onclick="closeNav()">Home</a></li>
+			<li><a href="#music" onclick="closeNav()">Music</a></li>
+			<li><a href="#bio" onclick="closeNav()">Bio</a></li>
+			<li><a href="#contact" onclick="closeNav()">Contact</a></li>
+		</ul>
 
+		<ul id="navigation__list" class="navigation__list">
+			<li><a class="navigation__list__item" href="#home">Home</a></li>
+			<li><a class="navigation__list__item" href="#music">Music</a></li>
+			<li><a class="navigation__list__item" href="#bio">Bio</a></li>
+			<li><a class="navigation__list__item" href="#contact">Contact</a></li>
+		</ul>
+	</nav>
 <!-- SCROLL TO TOP BUTTON -->
 
 <a href="#home" aria-label="Scroll back to top link">
@@ -143,7 +145,7 @@
 
 		<div class="bio__video" data-aos="fade-left">
 			<video autoplay muted playsinline>
-				<source src="static/media/ipnoz-vid.mp4" type="video/mp4">
+				<source src="static/media/ipnoz-vid.webm" type="video/mp4">
 				Your browser does not support the video tag.
 			</video>
     	</div>
@@ -253,29 +255,7 @@
 	</script>
 	<script>
 
-// ---------------------------------------------------	
-// 		HOME SLIDESHOW
-// ---------------------------------------------------
 
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("home__slides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 5000); // Change image every 2 seconds
-}
 </script>
 
 </body>

@@ -1,3 +1,46 @@
+// ---------------------------------------------------	
+// 		HOME SLIDESHOW
+// ---------------------------------------------------
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("home__slides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+
+// ---------------------------------------------------	
+// 		FUNCTION TO MAKE ACTIVE STATE TO NAVIGATION
+// ---------------------------------------------------
+
+// Get the container element
+var btnContainer = document.getElementById("navigation__list");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("navigation__list__item");
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
 // Call the scrollchange function when the user scrolls
 // window.addEventListener('scroll', function () {
 // 	scrollChange();
@@ -34,7 +77,7 @@ window.addEventListener("scroll", function(){
 
 const bars = document.getElementById("bars");
 const times = document.getElementById("times");
-const navigation = document.getElementById("header__nav");
+const navigation = document.getElementById("navigation__list");
 
 bars.addEventListener("click", openNav);
 times.addEventListener("click", closeNav);
@@ -62,5 +105,4 @@ function scrollFunction() {
     document.getElementById("scrollUp").style.display = "none";
   }
 }
-
 

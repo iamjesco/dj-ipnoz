@@ -5,11 +5,12 @@
 	display: flex
 	justify-content: center
 	align-items: center
-	background-color: #222222
+	// background-color: #222222
+	background-image: linear-gradient(#222222, #111111)
 	position: fixed
 	bottom: 0
 	z-index: 0
-	box-shadow: inset 0 0 40px 20px #000
+	// box-shadow: inset 0 0 40px 20px #000
 
 	&__container
 		align-items: center
@@ -22,7 +23,7 @@
 
 	&__copy 
 		text-align: center
-		font: normal .875rem Montserrat
+		font: $body-font
 		color: #fff
 
 .footer_social
@@ -37,6 +38,8 @@
 		align-items: center
 		transition: .3s ease-in-out
 		color: #ffffff
+		&:hover
+			color: $main-color
     
 .footer-clear
 	height: 39vh

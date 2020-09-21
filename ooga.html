@@ -26,24 +26,20 @@
 </head>
 <body>
 
-<header id="header" class="header">
+	<nav id="navigation" class="navigation">
 
-		<a href="#home" class="header__logo">
+		<a href="#home" class="navigation__logo">
 			<img src="static/images/logo-opt.png" alt="DJ-Ipnoz Logo" />
 		</a>
-		
-		<i id="bars" class="fas fa-bars header__icon"></i>
 
-		<nav id="header__nav" class="header__nav">
-			<ul class="header__list">
-				<li><i id="times" class="fas fa-times header__icon"></i></li>
-				<li><a href="#home" onclick="closeNav()">Home</a></li>
-				<li><a href="#music" onclick="closeNav()">Music</a></li>
-				<li><a href="#bio" onclick="closeNav()">Bio</a></li>
-				<li><a href="#contact" onclick="closeNav()">Contact</a></li>
-			</ul>
-		</nav>
-</header>
+		<ul class="navigation__list">
+			<li><a href="#home" onclick="closeNav()">Home</a></li>
+			<li><a href="#music" onclick="closeNav()">Music</a></li>
+			<li><a href="#bio" onclick="closeNav()">Bio</a></li>
+			<li><a href="#contact" onclick="closeNav()">Contact</a></li>
+		</ul>
+	</nav>
+
 
 <script src="static/scripts/main.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
